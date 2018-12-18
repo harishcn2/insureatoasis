@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Oasis Insurance is the new age online insurance policy provider. Buy and Renew different types of insurance policies online without any hassle. Compare insurance quotes, explore insurance premium calculator, enjoy stress free claims and more.">
+    <meta name="keywords" content="online insurance policy provider">
+    <meta name="author" content="Carmatec IT Solutions">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oasis Insurance</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section>
+    <!-- Login Modal with tab -->
+        <div id="feedback-modal" class="modal modal-with-tab fade" role="dialog">
+           <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                 <div class="modal-body pb0">
+                    <div class="row">
+                       <div class="col-md-12 login">
+                             <h1>your feedback</h1>
+                              <span class="deleteMeetingClose" data-dismiss="modal">&times;</span>
+                       </div>
+                     <div class="col-md-12 form-detail">
+                       <div class="col-md-5 user-image">
+                        <div class="feedback-board">
+                          <img src="assets/images/1-Icon.png" alt="feedback" class="img-responsive">
+                        </div>
+                       </div>
+                       <div class="col-md-7">
+                         <div class="feedback_container clearfix">
+                                <div class="rating_div">
+                                  <div class="smiley">
+                                    <span class="open"><img src="assets/images/2-Sad.png" /></span>
+                                    <span class="close"><img src="assets/images/2-Sad1.png" /></span>
+                                  </div>
+                                  <div class="smiley">
+                                    <span class="open"><img src="assets/images/3-Average.png" /></span>
+                                    <span class="close"><img src="assets/images/3-Average1.png" /></span>
+                                  </div>
+                                  <div class="smiley">
+                                    <span class="open"><img src="assets/images/4-Happy.png" /></span>
+                                    <span class="close"><img src="assets/images/4-Happy1.png" /></span>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="write-feedback">
+                             <h6>if intrested write your feedback</h6>
+                             <h5>Write your feedback here</h5>
+                          </div>
+                          <div class="feedbacktext">
+                                 <textarea class="message form-control" placeholder="Enter your message" tabindex=4></textarea>
+                          </div>
+                          <div class="submit-button feedback">
+                            <button class="btn btn-primary" type="button">Submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <!-- Modal with tab  Ends Here-->
+  </section>
+  <!-- Modal pdf viewer-->
+  <div id="mapviewer" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.3179912141827!2d55.21957701500811!3d25.12493798392992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f698682ee5a71%3A0xe02f7d2a39573160!2sZNZ+Garage+EST.!5e0!3m2!1sen!2sin!4v1543390247145" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/viewer.js"></script>
+    <script src="assets/js/viewportchecker.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+$('#feedback-modal').modal('show')
+
+$(document).ready(function() {
+
+
+        $(".question a").click(function() {
+          $(this).toggleClass("active_qa");
+        });
+
+         $(".smiley").click(function() {
+           $(this).toggleClass("test");
+                       $(this).siblings().removeClass("test");
+
+
+        });
+
+        });
+    </script>
+  </body>
+</html>

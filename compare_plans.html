@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Oasis Insurance is the new age online insurance policy provider. Buy and Renew different types of insurance policies online without any hassle. Compare insurance quotes, explore insurance premium calculator, enjoy stress free claims and more.">
+    <meta name="keywords" content="online insurance policy provider">
+    <meta name="author" content="Carmatec IT Solutions">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oasis Insurance</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div id="mySidenav" class="sidenav">
+  <img src="assets/images/sidenav_img.png" class="nav-img" />
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+  <!-- Navigation section --> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+       <div class="top-nav"></div>
+       <div class="oasis-nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" aria-controls="navbar" onclick="openNav()">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>       
+        <a class="navbar-brand" href="index.html"><img src="assets/images/oasis-logo.png" alt="Logo" class="img-responsive"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Insurances <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="megamenu clearfix">
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">Motor</h4>
+                  <ul class="submenu"> <li><a href="#">bike</a></li>
+                       <li><a href="#">car</a></li>
+                       <li><a href="#">boat</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">Home</h4>
+                  <ul class="submenu"> <li><a href="#">renters</a></li>
+                       <li><a href="#">owners</a></li>
+                       <li><a href="#">flood</a></li>
+                       <li><a href="#">property</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">MEDICAL</h4>
+                  <ul class="submenu"> <li><a href="#">day care procedures</a></li>
+                       <li><a href="#">meternity cover</a></li>
+                       <li><a href="#">restore Benefits</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">other</h4>
+                  <ul class="submenu"> <li><a href="#">business</a></li>
+                       <li><a href="#">commercial</a></li>
+                       <li><a href="#">life</a></li>
+                       <li><a href="#">travel</a></li>
+                       <li><a href="#">Wedding & event</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="reportclaim.html">claims</a></li>
+          <li><a href="#">renew</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQ</a></li>        
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <!--   <li><a href="javascript:void(0)" show-sec="#tab2info" data-toggle="modal" data-target="#modal-with-tab">Login</a><line/></li>
+          <li><a href="#" show-sec="#tab1info"  data-toggle="modal" data-target="#modal-with-tab">Sign Up</a></li> -->
+          <li>
+        <div class="dropdown user">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">Harish@carmatec.com
+              <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="myprofile.html">My Profile</a></li>
+            <li><a href="myquotes.html">My Quotes</a></li>
+            <li><a href="cancelpolicy.html">Cancel Policy</a></li>
+            <li><a href="reportclaim.html">Claim Policy</a></li>
+            <li class="divider"></li>
+            <li><a href="index.html" class="logout">Logout</a></li>
+          </ul>
+        </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </nav>
+<!-- Navigation section Ends here --> 
+<!-- Navigation section Ends here --> 
+
+<!-- top section -->
+  <section class="detail first myprofile-sec">
+    <div class="container-fluid page-heading">
+      <div class="container">
+        <div class="col-md-12"> 
+          <h3>Compare Plans</h3>
+        </div>
+        <div class="col-md-12 page-sub-heading">
+          <div class="row">
+            <div class="col-md-5 p0">
+              <h5>My Insurance</h5>
+              <h4><span>Rest of your life</span></h4>
+            </div>
+            <div class="col-md-2 p0">
+              <div class="profile-pic">
+                <img src="assets/images/3-Compare.png" alt="my profile" class="img-responsive" id="user-profile">               
+              </div>
+            </div>
+            <div class="col-md-5 p0">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- top section  ends here-->
+
+<!-- Dashboard sec -->
+  <section class="Dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+         
+
+
+<article>
+<div class="row">
+    <div class="col-md-12">    
+         <div class="compare-button compare-section">
+           <button class="com-btn" type="button" onclick="location.href='Quote-Listing.html'">back</button>
+         </div>    
+    </div>
+</div>
+
+
+<ul>
+   <li class="none">   
+  </li>
+  <li class="active">
+    <button>Alwathba National Insurance CO</button>
+  </li>
+  <li class="">
+    <button>The New India Insurance </button>
+  </li>
+  <li class="">
+    <button>Noor Tukaful General PJSC</button>
+  </li>
+  <li class="">
+    <button>OMAN INSURANCE COMPANY</button>
+  </li>
+</ul>  
+
+<table>
+  <thead>
+    <tr>
+      <td class="redbg">Logo</td>
+      <td class="none"></td>
+     <td class="side default left-space">
+        <img src="assets/images/9-logo.png" alt="agency-logo" class="img-responsive agent-logo">
+     </td>
+      <td class="side">
+        <img src="assets/images/10-logo.png" alt="agency-logo" class="img-responsive agent-logo">
+      </td>
+      <td class="side">
+        <img src="assets/images/11-logo.png" alt="agency-logo" class="img-responsive agent-logo">
+      </td>
+      <td class="side">
+        <img src="assets/images/12-logo.png" alt="agency-logo" class="img-responsive agent-logo">
+      </td>     
+    </tr>
+</thead>
+<tbody>
+   <!--  <tr>
+      <td class="redbg">Insurance & company name</td>
+            <td class="none"></td>
+     <td class="default left-space"><h4>Alwathba National Insurance CO</h4></td>
+      <td><h4>The New India Insurance </h4></td>
+      <td><h4>Noor Tukaful General PJSC </h4></td>
+      <td><h4>oman Insurance company </h4></td>
+    </tr>  -->
+
+    <tr>
+      <td class="redbg">plan name</td>
+      <td class="none"></td>
+      <td class="default  left-space"><h4>AWNIC PRO PLAn</h4></td>
+      <td><h4>Motor </h4></td>
+      <td><h4>Nia motor</h4></td>
+      <td><h4>oman Insured </h4></td>
+    </tr> 
+
+    <tr>
+      <td class="redbg">vehical value (AED)</td>
+      <td class="none"></td>
+      <td class="default left-space">30000.00</td>
+      <td><span class="price">30000.00</span></td>
+      <td><span class="price">30000.00</span></td>
+      <td><span class="price">30000.00</span></td>
+    </tr> 
+
+    <tr>
+      <td class="redbg">Net premium (AED)</td>
+       <td class="none"></td>
+      <td class="default  left-space">1360.00</td>
+      <td><span class="price">1398.00</span></td>
+      <td><span class="price">1466.00</span></td>
+      <td><span class="price">1365.00</span></td>
+    </tr> 
+
+    <tr>
+      <td class="redbg">Excess</td>
+       <td class="none"></td>
+      <td class="default  left-space">1360.00</td>
+      <td><span class="price">1398.00</span></td>
+      <td><span class="price">1466.00</span></td>
+      <td><span class="price">1365.00</span></td>
+    </tr> 
+
+    <tr>     
+      <td class="redbg">Repair type</td>
+       <td class="none"></td>
+      <td class="default left-space" cell-spacing="10">Non Agency</td>
+      <td><span class="price">Non Agency</span></td>
+      <td><span class="price">Non Agency</span></td>
+      <td><span class="price">Agency</span></td>
+    </tr> 
+
+    <tr>
+      <td class="none"></td>
+      <td class="none"></td>
+      <td class="none"></td>
+      <td class="none"></td>
+      <td class="none"></td>
+      <td class="none"></td>
+    </tr> 
+
+    <tr>
+      <td class="redbg">Personal accident - driver</td>
+      <td class="none"></td>
+      <td class="default left-space side"><span class="no"></span></td>
+      <td class="side"><span class="yes"></span></td>
+      <td class="side"><span class="yes"></span></td>
+      <td class="side"><span class="yes"></span></td>
+    </tr> 
+
+    <tr>
+      <td class="redbg">Personal accident - Passanger</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span><span class="info">(up to 3500 aed)</span></td>     
+      <td><span class="yes"></span><span class="info">(aed 2000 only)</span></td>
+      <td><span class="no"></span></td>
+    </tr>  
+
+    <tr>
+      <td class="redbg">Hire car</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="info">0.00 aed</span><span class="view" data-toggle="modal" data-target="#view-benefits">view benifit</span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span><span class="view">view benifit</span></td>
+    </tr> 
+
+    <tr>
+      <td class="redbg">Road side assistance</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>  
+
+        <tr>
+      <td class="redbg">IMC</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr> 
+
+        <tr>
+      <td class="redbg">oman cover</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><input type="checkbox" class="checkbox-custom"/><span class="custom">50.00 aed</span></td>
+      <td><span class="yes"></span></td>
+    </tr> 
+
+        <tr>
+      <td class="redbg">off road cover</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>     
+      <td><span class="yes"></span></td>
+       <td><input type="checkbox" class="checkbox-custom"/><span class="custom">50.00 aed</span></td>
+    </tr> 
+
+        <tr>
+      <td class="redbg">Wind sacreen damage</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr> 
+
+    <tr>
+      <td class="redbg">medical expenses</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+     <td><input type="checkbox" class="checkbox-custom"/><span class="custom">50.00 aed</span></td>
+      <td><span class="yes"></span></td>
+    </tr> 
+    <tr>
+      <td class="redbg">personal belongings</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>
+    <tr>
+      <td class="redbg">ambulance cover</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>
+    <tr>
+      <td class="redbg">fire, theft, storm & flood</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>
+    <tr>
+      <td class="redbg">third party property damage</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>
+    <tr>
+      <td class="redbg">third party liability</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>
+    <tr>
+      <td class="redbg">lock replacement</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>
+    <tr>
+      <td class="redbg">personal injury</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+      <td><span class="yes"></span></td>
+    </tr>
+    <tr>
+      <td class="redbg">valet parking</td>
+      <td class="none"></td>
+      <td class="default left-space"><span class="yes"></span></td>
+      <td><span class="yes"></span></td>
+       <td><span class="yes"></span></td>
+      <td><span class="no"></span></td>
+     
+    </tr>
+
+    <tr>
+      <td class="none"></td>
+      <td class="none"></td>
+      <td class="none default">
+        <div class="action">
+          <button class="btn btn-primary" type="button" onclick="location.href='quote_summary.html'">Buy Now</button>
+        </div>
+      </td>
+      <td class="none">
+        <div class="action">
+          <button class="btn btn-primary" type="button" onclick="location.href='quote_summary.html'">Buy Now</button>
+        </div>
+      </td>
+      <td class="none">
+        <div class="action">
+          <button class="btn btn-primary" type="button" onclick="location.href='quote_summary.html'">Buy Now</button>
+        </div>
+      </td>
+      <td class="none">
+        <div class="action">
+          <button class="btn btn-primary" type="button" onclick="location.href='quote_summary.html'">Buy Now</button>
+        </div>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+  
+</article>
+
+
+          </div>
+        </div>
+      </div>
+  </section>
+<!-- Dashboard sec ends here -->
+
+<!-- Modal pdf viewer-->
+<div id="pdfviewer" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">    
+      <div class="modal-body">
+        <object data=""></object>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Modal pdf viewer ends here-->
+
+<!-- Modal pdf viewer-->
+<div id="mapviewer" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">    
+      <div class="modal-body">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.3179912141827!2d55.21957701500811!3d25.12493798392992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f698682ee5a71%3A0xe02f7d2a39573160!2sZNZ+Garage+EST.!5e0!3m2!1sen!2sin!4v1543390247145" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>  
+    </div>
+  </div>
+</div>
+   
+<!-- view benefits modal -->
+  <div id="view-benefits" class="modal modal-with-tab fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+       <div class="modal-body pb0">
+          <div class="row">
+            <div class="col-md-12 login mb20">
+             <h1> Benefits</h1>
+              <span class="deleteMeetingClose" data-dismiss="modal">&times;</span>
+            </div>
+            <div class="mb20 mt20 pl20">
+              <p>UPTO AEB <span>200,000</span> Per Passenger</p>
+            </div>
+            <div class="col-md-12 text-center mb20">
+              <button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+        
+<!-- view benefits modal -->
+
+<!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="col-md-2">
+          <div class="footer-logo">
+              <img src="assets/images/oasis-logo2.png" alt="Logo" class="img-responsive">
+          </div>    
+        </div>
+        <div class="col-md-3">
+          <h3 class="footer-captions">Insurance offerings</h3>
+          <ul class="caption-list">
+            <li><a href="#">motor Insurance</a></li>
+            <li><a href="#">Medical Insurance</a></li>
+            <li><a href="#">Home Insurance</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+            <li><a href="#">Office Insurance</a></li>
+            <li><a href="#">Term Life Insurance</a></li>               
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-captions">Contact Us</h3>
+            <ul class="caption-list contact">
+              <li><a href="tel:"+123 4567 890"><i class="fa fa-phone" aria-hidden="true"></i>+123 4567 890</a></li>
+              <li><a href="mailto:"info@gulfoasis.com"><i class="fa fa-paper-plane" aria-hidden="true"></i>info@gulfoasis.com</a></li>             
+          </ul>
+          <h3 class="footer-captions">Office hours</h3>         
+            <ul class="caption-list contact time">
+              <li><a href="javascript:void(0)"> <i class="fa fa-clock-o" aria-hidden="true"></i>Sat - Wed: 8:00am - 1:00pm, 3:00pm - 6:00pm <br/> Thu: 8:00am - 1:00pm</a></li>   
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="footer-captions">Follow us on Social</h3>
+          <p>We are now on social network.<br/> Connect with us to update the latest news & promotion</p>
+                <div class="social">
+                    <a class="social_icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-vimeo" aria-hidden="true"></i>
+                    </a>
+              </div>
+        </div>
+      </div>
+      <section class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+             <p>Copyright 2018&copy; Gulf Oasis, All Right Reserved</p>
+            </div>
+            <div class="col-md-6 powered-text">
+             <p>Powered by <a href="https://www.carmatec.com/">Carmatec IT Solutions</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+<!-- Footer Ends Here -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>    
+    <script src="assets/js/viewer.js"></script>
+    <script src="assets/js/viewportchecker.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script type="text/javascript">
+      ;(function($) {
+   $.fn.fixMe = function() {
+      return this.each(function() {
+         var $this = $(this),
+            $t_fixed;
+         function init() {
+            $this.wrap('<div class="container" />');
+            $t_fixed = $this.clone();
+            $t_fixed.find("tbody").remove().end().addClass("fixed").insertBefore($this);
+            resizeFixed();
+         }
+         function resizeFixed() {
+            $t_fixed.find("th").each(function(index) {
+               $(this).css("width",$this.find("th").eq(index).outerWidth()+"px");
+            });
+         }
+         function scrollFixed() {
+            var offset = $(this).scrollTop(),
+            tableOffsetTop = $this.offset().top,
+            tableOffsetBottom = tableOffsetTop + $this.height() - $this.find("thead").height();
+            if(offset < tableOffsetTop || offset > tableOffsetBottom)
+               $t_fixed.hide();
+            else if(offset >= tableOffsetTop && offset <= tableOffsetBottom && $t_fixed.is(":hidden"))
+               $t_fixed.show();
+         }
+         $(window).resize(resizeFixed);
+         $(window).scroll(scrollFixed);
+         init();
+      });
+   };
+})(jQuery);
+
+$(document).ready(function(){
+   $("table").fixMe();
+   $(".up").click(function() {
+      $('html, body').animate({
+      scrollTop: 0
+   }, 2000);
+ });
+
+ var sidewidth = 0
+$('.side').each(function(){
+if($(this).width() > sidewidth){
+  sidewidth = $(this).width()
+}
+  
+})
+$('.fixed .side').css('width',(sidewidth+22)+'px')
+
+});
+    </script>
+  </body>
+</html>

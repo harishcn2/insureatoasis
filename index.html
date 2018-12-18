@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Oasis Insurance is the new age online insurance policy provider. Buy and Renew different types of insurance policies online without any hassle. Compare insurance quotes, explore insurance premium calculator, enjoy stress free claims and more.">
+    <meta name="keywords" content="online insurance policy provider">
+    <meta name="author" content="Carmatec IT Solutions">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oasis Insurance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div id="mySidenav" class="sidenav">
+  <img src="assets/images/sidenav_img.png" class="nav-img" />
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+  <!-- Navigation section --> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+       <div class="top-nav"></div>
+       <div class="oasis-nav">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" aria-controls="navbar" onclick="openNav()">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>       
+	      <a class="navbar-brand" href="index.html"><img src="assets/images/oasis-logo.png" alt="Logo" class="img-responsive"></a>
+	    </div>
+	    <div id="navbar" class="navbar-collapse collapse">
+	      <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Insurances <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="megamenu clearfix">
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">Motor</h4>
+                  <ul class="submenu"> <li><a href="#">bike</a></li>
+                       <li><a href="#">car</a></li>
+                       <li><a href="#">boat</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">Home</h4>
+                  <ul class="submenu"> <li><a href="#">renters</a></li>
+                       <li><a href="#">owners</a></li>
+                       <li><a href="#">flood</a></li>
+                       <li><a href="#">property</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">MEDICAL</h4>
+                  <ul class="submenu"> <li><a href="#">day care procedures</a></li>
+                       <li><a href="#">meternity cover</a></li>
+                       <li><a href="#">restore Benefits</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <h4 class="menu-heading">other</h4>
+                  <ul class="submenu"> <li><a href="#">business</a></li>
+                       <li><a href="#">commercial</a></li>
+                       <li><a href="#">life</a></li>
+                       <li><a href="#">travel</a></li>
+                       <li><a href="#">Wedding & event</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+	        <li><a href="reportclaim.html">claims</a></li>
+	        <li><a href="#">renew</a></li>
+	        <li><a href="#">About</a></li>
+	        <li><a href="#">FAQ</a></li>	      
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="javascript:void(0)" show-sec="#tab2info" data-toggle="modal" data-target="#modal-with-tab">Login</a><line/></li>
+          <li><a href="#" show-sec="#tab1info"  data-toggle="modal" data-target="#modal-with-tab">Sign Up</a></li>
+	      </ul>
+	    </div>
+	  </div>
+  </div>
+	</nav>
+<!-- Navigation section Ends here --> 
+
+<!-- Banner section -->
+<section class="banner-sec">
+  <div class="banner-slider">
+    <div><img src="assets/images/1-Oasis-Home-Main-Banner-GIF-Color2_V8.gif" alt="Motor" class="img-responsive" /></div>
+    <div><img src="assets/images/2-Medical-Insurance_V8.png" alt="Health" class="img-responsive" /></div>
+    <div><img src="assets/images/3-Home-Insurance_V8.png" alt="Home" class="img-responsive" /></div>
+    <div><img src="assets/images/4-Travel-Insurance_V8.png" alt="Travel" class="img-responsive" /></div>
+    <div><img src="assets/images/5-Office-Insurance_V8.png" alt="Office" class="img-responsive" /></div>
+    <div><img src="assets/images/6-Term-Life-Insurance_V8.png" alt="Term" class="img-responsive" /></div>
+  </div>
+
+  <div class="vertical-menu ">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="motor"><a href="#motor" aria-controls="motor" role="tab" data-toggle="tab"></a></li>
+      <li role="presentation" class="medical"><a href="#medical" aria-controls="medical" role="tab" data-toggle="tab"></a></li>
+      <li role="presentation" class="home"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"></a></li>
+      <li role="presentation" class="travel"><a href="#travel" aria-controls="travel" role="tab" data-toggle="tab"></a></li>
+      <li role="presentation" class="office"><a href="#office" aria-controls="office" role="tab" data-toggle="tab"></a></li>
+      <li role="presentation" class="term"><a href="#term" aria-controls="term" role="tab" data-toggle="tab"></a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane" id="motor">
+        <div class="inner-content">
+          <h3>motor insurance</h3>
+          <h4>quote & save today</h4>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control zip" placeholder="Enter Zipcode" />
+            </div>
+            <div class="col-xs-6 choose">
+              <select class="selectpicker" placeholder="">
+                <option value="">Select Motor</option>
+                <option>Car</option>
+                 <option>Bike</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary get-quote">Get Quote</button>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text. <a href=""><span>Learn More</span></a></p>
+        </div>
+      </div>
+      <!--Medical-->
+      <div role="tabpanel" class="tab-pane" id="medical">
+        <div class="inner-content">
+          <h3>Medical insurance</h3>
+          <h4>quote & save today</h4>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control zip" placeholder="Enter Zipcode" />
+            </div>
+            <div class="col-xs-6 choose">
+              <select class="selectpicker" placeholder="">
+                <option value="">Select Medical insurance</option>
+                <option>med 1</option>
+                 <option>med 2</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary get-quote">Get Quote</button>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text. <a href=""><span>Learn More</span></a></p>
+        </div>
+      </div>
+       <!--Home-->
+      <div role="tabpanel" class="tab-pane" id="home">
+          <div class="inner-content">
+          <h3>Home insurance</h3>
+          <h4>quote & save today</h4>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control zip" placeholder="Enter Zipcode" />
+            </div>
+            <div class="col-xs-6 choose">
+              <select class="selectpicker" placeholder="">
+                <option value="">Select Home Insurance</option>
+                <option>Home 1</option>
+                 <option>Home 2</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary get-quote">Get Quote</button>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text. <a href=""><span>Learn More</span></a></p>
+        </div>
+      </div>
+        <!--Travel-->
+      <div role="tabpanel" class="tab-pane" id="travel">
+          <div class="inner-content">
+          <h3>Travel insurance</h3>
+          <h4>quote & save today</h4>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control zip" placeholder="Enter Zipcode" />
+            </div>
+            <div class="col-xs-6 choose">
+              <select class="selectpicker" placeholder="">
+                <option value="">Select Travel Insurance</option>
+                <option>Travel 1</option>
+                 <option>Travel 2</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary get-quote">Get Quote</button>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text. <a href=""><span>Learn More</span></a></p>
+        </div>
+      </div>
+       <!--Office-->
+      <div role="tabpanel" class="tab-pane" id="office">
+          <div class="inner-content">
+          <h3>Office insurance</h3>
+          <h4>quote & save today</h4>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control zip" placeholder="Enter Zipcode" />
+            </div>
+            <div class="col-xs-6 choose">
+              <select class="selectpicker" placeholder="">
+                <option value="">Select Office Insurance</option>
+                <option>Office 1</option>
+                 <option>Office 2</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary get-quote">Get Quote</button>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text. <a href=""><span>Learn More</span></a></p>
+        </div>
+      </div>
+       <!--Term-->
+      <div role="tabpanel" class="tab-pane" id="term">
+          <div class="inner-content">
+          <h3>Term insurance</h3>
+          <h4>quote & save today</h4>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control zip" placeholder="Enter Zipcode" />
+            </div>
+            <div class="col-xs-6 choose">
+              <select class="selectpicker" placeholder="">
+                <option value="">Select Term Insurance</option>
+                <option>Term 1</option>
+                 <option>Term 2</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary get-quote">Get Quote</button>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text. <a href=""><span>Learn More</span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Banner section -->
+
+<!-- detail section 1-->
+<section class="detail first">
+   <div class="container">
+    <div class="col-md-12"> 
+          <h3>Why Oasis Insurance?</h3>
+          <p class="caption">Get the best price every single time</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+          <img src="assets/images/Lamp.png" alt="Why Oasis Insurance?" class="img-responsive lamp">
+          <div class="why-oasis">
+            <img src="assets/images/Laptop.png" alt="Why Oasis Insurance?" class="img-responsive lat-image">
+            <div class="why-oasis-slider">
+              <div>
+                  <div class="col-xs-12 col-sm-8">
+                    <h5>Same Price</h5>
+                    <h4 class="gold">Better Deals</h4>
+                    <p> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                  </div>
+                   <div class="col-xs-4 ">
+                     <img src="assets/images/Sld1.png" alt="Why Oasis Insurance?" class="img-responsive scroll-image">
+                   </div>
+              </div>
+         
+              <div>
+                  <div class="col-xs-12 col-sm-8">
+                    <h5>Stress</h5>
+                    <h4 class="green">Free Claims</h4>
+                    <p> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                  </div>
+                   <div class="col-xs-4 ">
+                     <img src="assets/images/Sld2.png" alt="Why Oasis Insurance?" class="img-responsive scroll-image">
+                   </div>
+              </div> 
+
+              <div>
+                  <div class="col-xs-12 col-sm-8">
+                    <h5>Insure your income</h5>
+                    <h4>In Retirement</h4>
+                    <p> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                  </div>
+                   <div class="col-xs-4 ">
+                     <img src="assets/images/Sld3.png" alt="Why Oasis Insurance?" class="img-responsive scroll-image">
+                   </div>
+              </div>
+
+            </div>
+          </div>
+     </div>
+      <div class="col-md-6">
+          <div class="advantage-section">
+            <h5>Same Price - Better Deals</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="advantage-section">
+            <h5>Stress - Free Claims</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="advantage-section">
+            <h5>Insure your Income in retirement</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="advantage-section">        
+              <button class="btn btn-primary">View more</button>
+          </div>
+    </div>
+  </div>
+</section>
+<!-- detail section 1 ends here-->
+
+<!-- detail section 2 --> 
+<section class="detail easy-buying">
+  <h3>Easy buying and renewal in no time?</h3>
+ <p class="caption">We are big,safe and friendly</p>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/images/clock.gif" alt="easy-buying" class="img-responsive">
+      </div>
+      <div class="col-md-6 easy">
+        <h1 class="num">1%</h1>
+         <img src="assets/images/3-Oasis-Easy-Buying-GIF2_V8.gif" alt="Animated easy-buying" class="img-responsive animated-easy">
+        <div class="buy-section">        
+            <button class="btn btn-primary">Retrive Quote</button>
+            <button class="btn btn-primary">Renew Policy</button>
+        </div>  
+    </div>
+  </div></div>
+  </section>
+<!-- detail section 2 ends here--> 
+
+<!-- together section -->
+<section class="detail first">
+   <div class="container">
+    <div class="col-md-12"> 
+          <h3>Oasis loved by people</h3>
+          <p class="caption">Together we're stronger</p>
+    </div>
+    <div class="row">
+      <div class="col-md-12"> 
+          <div class="counters clearfix">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 counter-section">
+              <h4><span class="count">20</span>K</h4>
+              <p>No. of policy Issued</p>
+            </div>
+            <div class="col-md-2 counter-section">
+              <h4><span class="count">20</span>K</h4>
+              <p>No. of Claims</p>
+            </div>
+            <div class="col-md-2 counter-section">
+            <h4><span class="count">20</span>K</h4>
+              <p>Happy customers</p>
+            </div>
+            <div class="col-md-2 counter-section">
+            <h4><span class="count">20</span>K</h4>
+              <p>Motor Insurances</p>
+            </div>
+            <div class="col-md-2 counter-section">
+              <h4><span class="count">20</span>K</h4>
+              <p>Partner worldwide</p>
+            </div>
+             <div class="col-md-1"></div>
+           </div>
+      </div>
+  </div>
+</div>
+</section>
+<!-- together section ends here-->
+
+<!-- Testimonial section -->
+<section class="detail first testimony">
+   <div class="container">
+    <div class="col-md-12"> 
+          <h3>Testimonials</h3>
+          <p class="caption">People talks about oasis insurance</p>
+    </div>
+    <div class="row">
+      <div class="col-md-5 pr0"> 
+        <img src="assets/images/4-Oasis-Testimonial-Correction2_V7.gif" alt="testimonial" class="img-responsive">
+      </div>
+      <div class="col-md-7 testimonial">
+        <div class="center">
+          <div class="box">
+            <div class="testimonial-circle"></div>
+            <div class="testimonial-circle-holder">
+              <img src="assets/images/user.png" alt="testimonial" class="img-responsive">
+            </div>           
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <h4>Saurab Singh</h4>
+            <p class="designation">CEO - ABC Counsultancy</p>          
+        </div>
+        <div class="box">
+            <div class="testimonial-circle"></div>
+            <div class="testimonial-circle-holder">
+              <img src="assets/images/user.png" alt="testimonial" class="img-responsive">
+            </div> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <h4>Saurab Singh</h4>
+            <p class="designation">CEO - ABC Counsultancy</p>          
+        </div>
+          <div class="box">
+            <div class="testimonial-circle"></div>
+            <div class="testimonial-circle-holder">
+              <img src="assets/images/user.png" alt="testimonial" class="img-responsive">
+            </div> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <h4>Saurab Singh</h4>
+            <p class="designation">CEO - ABC Counsultancy</p>          
+        </div>
+             
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonial section ends here-->
+
+<!-- Partner section -->
+<section class="detail first">
+   <div class="container">
+    <div class="col-md-12"> 
+          <h3>Our Partners</h3>
+          
+    </div>
+    <div class="row">
+      <div class="col-md-12"> 
+           <div class="partner">
+        <div class="box">
+         <img src="assets/images/qic-logo.png" alt="Partner" class="img-responsive">
+        </div>
+        <div class="box">
+         <img src="assets/images/daman.png" alt="Partner" class="img-responsive">
+        </div>
+        <div class="box">
+         <img src="assets/images/emirates.png" alt="Partner" class="img-responsive">
+        </div>
+        <div class="box">
+         <img src="assets/images/adnic.png" alt="Partner" class="img-responsive">
+        </div>
+        <div class="box">
+         <img src="assets/images/qic-logo.png" alt="Partner" class="img-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Partner section ends here-->
+
+<!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="col-md-2">
+          <div class="footer-logo">
+              <img src="assets/images/oasis-logo2.png" alt="Logo" class="img-responsive">
+          </div>    
+        </div>
+        <div class="col-md-3">
+          <h3 class="footer-captions">Insurance offerings</h3>
+          <ul class="caption-list">
+            <li><a href="#">Motor Insurance</a></li>
+            <li><a href="#">Medical Insurance</a></li>
+            <li><a href="#">Home Insurance</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+            <li><a href="#">Office Insurance</a></li>
+            <li><a href="#">Term Life Insurance</a></li>               
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-captions">Contact Us</h3>
+            <ul class="caption-list contact">
+              <li><a href="tel:"+123 4567 890"><i class="fa fa-phone" aria-hidden="true"></i>+123 4567 890</a></li>
+              <li><a href="mailto:"info@gulfoasis.com"><i class="fa fa-paper-plane" aria-hidden="true"></i>info@gulfoasis.com</a></li>             
+          </ul>
+          <h3 class="footer-captions">Office hours</h3>         
+            <ul class="caption-list contact time">
+              <li><a href="javascript:void(0)"> <i class="fa fa-clock-o" aria-hidden="true"></i>Sat - Wed: 8:00am - 1:00pm, 3:00pm - 6:00pm <br/> Thu: 8:00am - 1:00pm</a></li>   
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="footer-captions">Follow us on Social</h3>
+          <p>We are now on social network.<br/> Connect with us to update the latest news & promotion</p>
+                <div class="social">
+                    <a class="social_icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social_icon">
+                        <i class="fa fa-vimeo" aria-hidden="true"></i>
+                    </a>
+              </div>
+        </div>
+      </div>
+      <section class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+             <p>Copyright 2018&copy; Gulf Oasis, All Right Reserved</p>
+            </div>
+            <div class="col-md-6 powered-text">
+             <p>Powered by <a href="https://www.carmatec.com/">Carmatec IT Solutions</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+<!-- Footer Ends Here -->
+
+     <!-- Login Modal with tab -->
+         <div id="modal-with-tab" class="modal modal-with-tab fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body pb0">
+                     <div class="row">
+                        <div class="col-md-12 login">                         
+                              <h1>LOGIN</h1>
+                               <span class="deleteMeetingClose" data-dismiss="modal">&times;</span>
+                        </div>
+                      <div class="col-md-12 form-detail">
+                        <div class="col-md-5 user-image">
+                           <img src="assets/images/Login.png" alt="Login / Signup" class="img-responsive login"/>
+                           <p>Get your insurance policy in minutes</p>
+                        </div>
+                        <div class="col-md-7">
+                           <div class="panel with-nav-tabs panel-info">
+                              <div class="panel-heading">
+                                 <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#tab1info" show-sec="#tab1info" data-toggle="tab">New to oasis</a><line class="sec"></line></li>
+                                    <li><a href="#tab2info" show-sec="#tab2info" data-toggle="tab">Existing Customer</a></li>
+                                 </ul>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="tab1info">
+                                       <form id="register-form" action="#" method="post" role="form" ">
+                                          <div class="form-group">
+                                             <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                          </div>
+                                          <div class="form-group">
+                                             <input type="text" name="MobileNumber" id="password" tabindex="2" class="form-control" placeholder="Mobile Number - Example: 05XXXXXXXX">
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">
+                                                   <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="btn btn-primary" value="Register Now">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2info">
+                                      <div class="login-screen">
+                                       <form id="login-form" action="#" method="post" role="form" >
+                                          <div class="form-group">
+                                             <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Email / Mobile Number" value="">
+                                          </div>
+                                          <div class="form-group">
+                                             <input type="text" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                          </div>                                        
+                                          <div class="form-group">
+                                             <div class="">
+                                                <div class="col-sm-12 text-center">
+                                                   <input type="button" name="login-submit" id="login-submit" onclick="location.href='dashboard.html'" tabindex="4" class=" btn btn-primary" value="Log In">
+                                                   <span class="spacing">or</span>
+                                                   <input type="button" name="otp-screen" id="otp-login" tabindex="4" class=" btn btn-primary" value="OTP Login">   
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </form>
+                                     </div>
+                                     <!-- OTP section -->
+                                     <div class="otp-screen">
+                                      <form id="login-form" action="#" method="post" role="form" >
+                                          <div class="form-group">
+                                             <input type="text" name="otp" id="otp" tabindex="1" class="form-control" placeholder="Enter OTP" value="">
+                                          </div>
+                                            <a href="javascript:void(0)">Regenerate OTP</a>
+                                          <div class="form-group">
+                                             <div class="">
+                                                <div class="col-sm-12 text-center">
+                                                   <input type="submit" name="login-submit" id="login-submit" tabindex="4" class=" btn btn-primary" value="Log In">        
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </form>
+                                      <p class="note">
+                                       OTP sent to your registerd Email id and Mobile number, Please enter the otp to proceed further. 
+                                     </p>
+                                     </div>
+                                        <!-- OTP section ends here -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal with tab  Ends Here-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>    
+    <script src="assets/js/viewportchecker.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.banner-slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true
+        });
+      //  $('.banner-slider ul.slick-dots')
+        $('.vertical-menu ul.nav li a').click(function(){
+          var currentAttr = $(this).attr('href')
+
+             switch (currentAttr) {
+                case '#motor':
+                    $('.banner-slider ul.slick-dots li button[aria-label="1 of 6"]').click();
+                 break;
+                case '#medical':
+                    $('.banner-slider ul.slick-dots li button[aria-label="2 of 6"]').click();
+                 break;
+               case '#home':
+                    $('.banner-slider ul.slick-dots li button[aria-label="3 of 6"]').click();
+                 break;
+                case '#travel':
+                    $('.banner-slider ul.slick-dots li button[aria-label="4 of 6"]').click();
+                 break;
+                 case '#office':
+                    $('.banner-slider ul.slick-dots li button[aria-label="5 of 6"]').click();
+                 break; 
+                case '#term':
+                    $('.banner-slider ul.slick-dots li button[aria-label="6 of 6"]').click();
+                 break;
+                default:
+                   $('.banner-slider ul.slick-dots li button[aria-label="1 of 6"]').click();
+            }
+        })
+      });
+    </script>
+  </body>
+</html>

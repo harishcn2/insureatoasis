@@ -1,0 +1,136 @@
+$primary-color: #212121; /* Gray */
+$secondary-color: #ec1d27; /* red */
+
+$background:#f9f9f9; /* theme background */
+$nav-background:#424242;
+$shadow-color:#eee;
+$dots-color:#c5c3c3;
+$copyright:#191919;
+$input-border:#bfbfbf;
+
+$radius: 6px;
+
+.detail.first.myprofile-sec {
+    padding-top: 120px;
+    border: 0;
+    .page-heading{
+    	background: url("../images/Top-bar.png") no-repeat right bottom;
+    	@media(max-width:667px){
+    		background: #fff;
+    		border-bottom:1px solid $nav-background;
+    	}
+    }
+     .page-sub-heading{
+	    @media(max-width:667px){
+			text-align: center;		
+		}     
+    	h5 {
+			font-size: 26px;
+			position: relative;
+			margin-top: 68px;
+			font-weight: bold; 
+		}
+		 h4 {
+			    font-size: 40px;
+			    span{
+			    	color:$secondary-color;
+			    	font-weight: bold;
+			    	font-size:44px;
+			    	text-transform: capitalize;
+			    }
+		}
+	}
+	.profile-pic {
+	    position: relative;
+	    text-align: center;
+	    width:160px;
+	    height: 160px;
+	    @media(max-width:667px){
+			position: initial;		
+		}
+	    img{
+	    	position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top: 70px;
+			&#user-profile{
+				background: white;
+				border-radius: 50%;
+				border:1px solid $nav-background;
+				width:160px;
+	   			height: 160px;
+			}
+	    }
+	    .myprofile-edit {
+		    position: absolute;
+			right: 0;
+			width: 34px;
+			height: 34px;
+			top: 100px;
+			img{
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+.open>.btn-default.dropdown-toggle:hover,.open>.btn-default.dropdown-toggle:focus{
+	background: transparent;
+	outline:0;
+}
+.form-control,.bootstrap-select>.dropdown-toggle{
+	border: 0;
+	border-bottom: 1px solid $input-border;
+	box-shadow: none;
+	border-radius:0;
+	padding-left:0;
+	padding-right:0;
+	height:auto;
+	background: transparent;
+	font-size:18px;
+	color: $nav-background;
+	font-weight: 500;
+	&:focus,&:hover{
+		outline:0;
+		box-shadow: none;
+		border-color:$primary-color;
+		background: transparent;
+	}
+}
+
+.Profile-field{
+	background:  url("../images/Watermark.png") #fff no-repeat 85% 90%;
+	background-size: 250px 250px;
+	padding-top: 80px;
+	border: 0;
+	.profile-section-heading{
+		color:$secondary-color;
+		font-weight: bold;
+		margin-bottom:30px;
+	}
+	.form-group{
+		label{
+			margin-bottom: 0px;
+			font-weight: 400;
+		}
+	}
+}
+
+
+@media (max-width: 980px){
+	
+}
+@media (max-width: 800px){
+	
+}
+@media (max-width: 768px){
+	
+}
+@media (max-width: 767px){
+	
+}
+@media (max-width: 414px){
+	 
+}

@@ -1,0 +1,98 @@
+
+//	 __  __ _____  _____ _   _ ____
+//	|  \/  |_ _\ \/ /_ _| \ | / ___|
+//	| |\/| || | \  / | ||  \| \___ \
+//	| |  | || | /  \ | || |\  |___) |
+//	|_|  |_|___/_/\_\___|_| \_|____/
+//
+//	 ~ SCSS mixins and variables ~
+
+/**** Author : sanjota ****/
+$full-width :100%;
+$primary_color : #4c4c4c;
+$primary-bg-color:#171f2c;
+$button-bg:#272F42;
+$saffron :#DB6237;
+$credentials_page_bg_color:#E9E9E9;
+
+@mixin box-shadow($top, $left,$size, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $size $color;
+    -moz-box-shadow:inset $top $left $blur $size $color;
+    box-shadow:inset $top $left $blur $size $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $size $color;
+    -moz-box-shadow: $top $left $blur $size $color;
+    box-shadow: $top $left $blur $size $color;
+  }
+}
+
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+@mixin breakpoint($min,$max) {
+@media (min-width: $min) and (max-width: $max) {
+	@content;
+}
+}
+@mixin breakpoint($max) {
+@media (max-width: $max) {
+	@content;
+}
+}
+@mixin shortcut_icons($color,$bgColor,$width,$height,$lineHeight){
+	display: inline-block;
+	color: $color;
+	background:$bgColor;
+	width:$width;
+	height: $height;
+	line-height: $lineHeight;
+	border-radius: 4px;
+	text-align: center;	
+	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.175);
+	vertical-align: middle;
+}
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}  
+}
+
+@mixin mmt_transition($transition) {
+	-moz-transition:    $transition;
+	-o-transition:      $transition;
+	-webkit-transition: $transition;
+	transition:         $transition;
+}
+
+@mixin selectpicker($color,$padding,$border,$fSize,$radius,$bgcolor,$texttype) {
+	padding: $padding;
+	border:$border;
+	font-size: $fSize;
+	border-radius: $radius;
+	background: $bgcolor;
+	text-transform: $texttype;
+	color: $color;
+}
+@mixin mmt_button($color,$padding,$border,$fSize,$radius) {
+	padding: $padding;
+	border:$border;
+	font-size: $fSize;
+	border-radius: $radius;
+	color: $color;
+}
+@mixin linear-gradient($startcolor,$endcolor){
+	background: $startcolor;
+	background: -moz-linear-gradient(top,  $startcolor 50%, $endcolor 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,$startcolor), color-stop(50%,$endcolor)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $startcolor 50%,$endcolor 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $startcolor 50%,$endcolor 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $startcolor 50%,$endcolor 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  $startcolor 50%,$endcolor 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startcolor', endColorstr='$endcolor',GradientType=0 ); /* IE6-9 */
+}
